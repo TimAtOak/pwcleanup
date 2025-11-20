@@ -1,9 +1,10 @@
 import os
+from InquirerPy import prompt
 
+from clean_files_folders import clean_files_folders
 from get_folder_size import get_folder_size
 
-
-def log_folders(path):
+def log_folders_and_files(path):
     # List all files and folders in the directory
     entries = os.listdir(path)
     size_list = []
@@ -42,3 +43,22 @@ def log_folders(path):
             type_str = "File"
         print(f"{type_str}: {name} - {size / (1024*1024):.2f} MB")
 
+    sub_questions = [
+        {
+            "type": "list",
+            "name": "subAction",
+            "message": "Choose an action:",
+            "choices": ["Clean", "Back", "Exit"]
+        }
+    ]
+
+    answer = prompt(sub_questions)
+    sub_action = answer["subAction"]  # Extract string from dictionary
+
+    if sub_action == "Clean":
+        clean_files_folders(path)
+    elif sub_action == "Back":
+        from choose_folder import choose_folders
+        choose_folders()  # Call your subfolder selection
+    elif sub_action == "Exit":
+        print("Goodbye!")
