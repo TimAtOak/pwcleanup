@@ -117,7 +117,7 @@ dmypy.json
 .vscode/
 
 # PyCharm
-.idea/
+.idea
 *.iml
 *.ipr
 *.iws

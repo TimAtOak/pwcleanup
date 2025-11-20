@@ -1,4 +1,3 @@
-import os
 from InquirerPy import prompt
 from choose_folder import choose_folders
 

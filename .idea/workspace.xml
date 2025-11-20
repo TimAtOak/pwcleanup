@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06c91f8b-1ee8-408e-b67e-4d4d1c17a911" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/choose_folder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clean_files_folders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log_folders.py" beforeDir="false" afterPath="$PROJECT_DIR$/log_folders.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
